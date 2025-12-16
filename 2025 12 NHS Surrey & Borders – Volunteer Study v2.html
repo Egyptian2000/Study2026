@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NHS Surrey &amp; Borders – Volunteer Study (Hearing &amp; Alzheimer’s)</title>
+  <meta name="description" content="Volunteer for safe NHS research into the link between hearing and Alzheimer’s. If you’re 60+ and don’t wear a hearing aid, you could earn £200.">
+  <meta name="theme-color" content="#005EB8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --nhs-blue:#005EB8;
+      --text:#0B0C0C;
+      --muted:#505A5F;
+      --bg:#FFFFFF;
+      --panel:#F3F7FB;
+      --radius:16px;
+      --shadow:0 10px 24px rgba(0,0,0,.06);
+      --fs-base:18px;
+      --maxw:1120px;
+    }
+    @media (min-width: 1024px){
+      :root{ --fs-base:19px; }
+    }
+    html{ font-size: var(--fs-base); }
+    *, *::before, *::after{ box-sizing: border-box; }
+    body{
+      margin:0;
+      font-family: 'Urbanist', system-ui, -apple-system, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+    }
+    .topbar{
+      position:sticky; top:0; z-index:100;
+      background:#fff; border-bottom:1px solid #E5E7EB;
+      padding: 0.5rem 0;
+    }
+    .wrap{ max-width:var(--maxw); margin-inline:auto; padding-inline:1rem; }
+    .row{ display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+    
+    .brand{ display:flex; align-items:center; gap:.75rem; }
+    /* NHS Logo sizing */
+    .brand img { height: 50px; width: auto; display: block; }
+    
+    .cta-call{
+      display:inline-flex; align-items:center; gap:.5rem;
+      background:var(--nhs-blue); color:#fff; border-radius:999px;
+      padding:.8rem 1.1rem; font-weight:700; text-decoration:none; box-shadow: var(--shadow);
+    }
+    .hero{
+      background:linear-gradient(180deg, #F9FBFF 0%, #FFFFFF 100%);
+      padding:3rem 0 1rem;
+    }
+    .headline{
+      font-size: clamp(1.8rem, 1.35rem + 2.2vw, 2.8rem);
+      line-height:1.2; letter-spacing:.2px; margin: 0 0 .75rem;
+      font-weight:800; color:#1F2937;
+    }
+    .subhead{ color:var(--muted); font-size:1.05rem; margin:0 0 1.25rem; }
+    
+    .grid-2{ display:grid; gap:1.5rem; grid-template-columns:1fr; }
+    @media (min-width: 860px){ .grid-2{ grid-template-columns:1.2fr .8fr; } }
+    
+    .panel{ background:var(--panel); border-radius:16px; padding:1.5rem; box-shadow: var(--shadow); }
+    .panel h2 { font-size: 1.15rem; font-weight: 700; margin-top: 0; line-height: 1.4; }
+    
+    .btn-primary{ 
+        background:var(--nhs-blue); color:#fff; font-weight:700; border-radius:12px; 
+        padding:.9rem 1.1rem; text-decoration:none; border:none; width:100%; cursor:pointer;
+        display: block; text-align: center; font-family: inherit; font-size: 1rem;
+    }
+    
+    ul.feature { list-style:none; padding:0; margin: 1.5rem 0; }
+    ul.feature li { display:flex; gap:.75rem; align-items:flex-start; padding:.5rem 0; border-bottom:1px dashed #E5E7EB; }
+    
+    input, textarea { 
+        width:100%; padding:.8rem; border:1px solid #CBD5E1; border-radius:10px; 
+        margin:.35rem 0 1rem; font-family:inherit; font-size: 1rem;
+    }
+    
+    .footer {
+      background:#F7FAFC; border-top:1px solid #E5E7EB; padding:2rem 0;
+      color:#374151; text-align: center;
+    }
+    .foot-note { font-size:.9rem; margin: 0.5rem 0; }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="wrap row">
+      <div class="brand">
+        <img src="https://www.sabp.nhs.uk/application/files/9517/5768/5396/sabp_nhs_logo.svg" alt="Surrey & Borders Partnership NHS Foundation Trust Logo">
+      </div>
+      <a class="cta-call" href="tel:+441372216584">Call 01372 216584</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <h2 class="headline">Help Us Understand the Link Between Hearing and Alzheimer’s</h2>
+        <p class="subhead">If you’re 60+ and don’t wear a hearing aid, you could earn <strong>£200</strong> by volunteering in safe NHS research.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="grid-2">
+        <div>
+          <h2>Study Information</h2>
+          <ul class="feature">
+            <li>✅ Age <strong>60+</strong></li>
+            <li>✅ Do <strong>NOT</strong> wear a hearing aid</li>
+            <li>💰 Receive a payment of up to <strong>£200</strong></li>
+            <li>⏱️ Total time: <strong>3–4 hours</strong></li>
+            <li>🧠 Safe, non-invasive brainwave test</li>
+          </ul>
+        </div>
+
+        <div class="contact">
+          <div class="panel">
+            <h2>Clinicians, patient advocates, or curious supporters — leave your details to hear about our progress and ways to get involved.</h2>
+            
+            <form action="https://formspree.io/f/xovgoljy" method="POST">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+              
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" required>
+              
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email">
+              
+              <label for="msg">Message (optional)</label>
+              <textarea id="msg" name="message" rows="3"></textarea>
+              
+              <button class="btn-primary" type="submit">Send enquiry</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="foot-note">This study has received Health Research Authority (HRA) and Research Ethics Committee (REC) approval.</p>
+      <p class="foot-note">This is an informational research recruitment page for Surrey & Borders Partnership NHS Foundation Trust.</p>
+      <p class="foot-note">&copy; 2025 NHS Surrey & Borders Partnership</p>
+    </div>
+  </footer>
+
+</body>
+</html>
